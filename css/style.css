@@ -151,7 +151,7 @@ li {
     font-weight: 500;
     letter-spacing: 0.5px;
     color: #000000;
-    font-size: 16px;
+    font-size: 0.9em;
 }
 
 
@@ -1457,6 +1457,31 @@ and (min-width : 551px){
     margin-top: 30px;
 }
 
+/* --- CMU-red button --- */
+.btn-cmu,
+.btn-cmu:hover,
+.btn-cmu:focus,
+.btn-cmu:active,
+.btn-cmu.active,
+.open > .dropdown-toggle.btn-cmu,
+.btn-cmu:active:hover,
+.btn-cmu:active:focus,
+.btn-cmu:active.focus,
+.btn-cmu.disabled,
+.btn-cmu[disabled] {
+  background-color: #C41230;   /* solid CMU red */
+  border-color:    #C41230;
+  color: #fff;                 /* keep text readable */
+  outline: none;              
+  box-shadow: none;            
+}
+
+.btn-cmu {
+  display: block;        /* make margin:auto work          */
+  width:  max-content;   /* shrink to content (modern CSS) */
+  margin: 0 auto;        /* equal L/R margins → centered   */
+}
+
 
 /*-------------------------------------------------------*/
 /* Start Footer Section                                  */
@@ -1465,13 +1490,15 @@ and (min-width : 551px){
 footer.style-1 {
     margin-top: 0px;
     padding: 25px 0;
-    background: rgba(0, 0, 0, 0.8);
+    background-color: #E0E0E0 !important;
+	text-align: right;
 }
 
 footer.style-1 .copyright {
     text-transform: uppercase;
     text-transform: none;
-    color: #E0E0E0;
+    color: #0000000 !important;
+	font-size: 1.25em;
 }
 
 /**** Start Modal Section ****/
